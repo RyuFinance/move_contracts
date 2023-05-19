@@ -1,0 +1,25 @@
+[package]
+name = "RyuSwap"
+version = "1.0.0"
+upgrade_policy = "immutable"
+
+[addresses]
+ryufinance = "0x0"
+sui =  "0x2"
+ryulib= "0x83100cc8a53d14b014321695f4e277f45ba6d9f9ee40f9c26cfd25c7536c98a5"
+
+dao_admin = "0x3ec31c14f6739ff7da81c7f10912cbdea340319c95b30cd52b55e8e697655472"
+dao_admin_address="0x3ec31c14f6739ff7da81c7f10912cbdea340319c95b30cd52b55e8e697655472"
+emergency_admin_address= "0x3ec31c14f6739ff7da81c7f10912cbdea340319c95b30cd52b55e8e697655472"
+fee_admin_address="0x3ec31c14f6739ff7da81c7f10912cbdea340319c95b30cd52b55e8e697655472"
+emergency_admin="0x3ec31c14f6739ff7da81c7f10912cbdea340319c95b30cd52b55e8e697655472"
+fee_admin="0x3ec31c14f6739ff7da81c7f10912cbdea340319c95b30cd52b55e8e697655472"
+
+
+
+[dependencies]
+MoveStdlib = { local = "../../../sui/crates/sui-framework/packages/move-stdlib" }
+Sui = { local = "../../../sui/crates/sui-framework/packages/sui-framework" }
+
+[dependencies.Ryulib]
+local = "../ryu_lib"

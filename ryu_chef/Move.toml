@@ -1,0 +1,15 @@
+[package]
+name = "RyuChef"
+version = "1.0.0"
+upgrade_policy = "immutable"
+
+[addresses]
+ryuchef = "0x0"
+ryucoin = "0x8aae77236e8dd77059180cb6738ffcf3f7d471f1419f7aed3531eb1e15c12776"
+sui =  "0x2"
+dao_admin = "0x3ec31c14f6739ff7da81c7f10912cbdea340319c95b30cd52b55e8e697655472"
+
+[dependencies]
+MoveStdlib = { local = "../../../sui/crates/sui-framework/packages/move-stdlib" }
+Sui = { local = "../../../sui/crates/sui-framework/packages/sui-framework" }
+RyuCoin = { local = "../ryu_coin" }
